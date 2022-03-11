@@ -7,7 +7,6 @@ LDFLAGS= -nostdlib -T linker_file.ld
 
 all:clean main.o own_drivers_and_func.o startup.o finalfile.elf run
 
-
 main.o:main.c
 	$(CC) $(CFLAGS) -o $@ $^
 
